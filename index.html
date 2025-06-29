@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- alarm Symbol -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=alarm" />
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+    <div class="quiz_configuration">
+        <h1>Quiz Configuration</h1>
+        <h4>Select category</h4>
+
+        <div class="select_subject">
+            <button class="subject active">Programming</button>
+            <button class="subject">Geography</button>
+            <button class="subject">Mathematics</button>
+            <button class="subject">Entertainment</button>
+        </div>
+
+        <h4>No. of Questions</h4>
+
+        <div class="question_number">
+            <button class="no_of_questions active">5</button>
+            <button class="no_of_questions">10</button>
+            <button class="no_of_questions">15</button>
+            <button class="no_of_questions">20</button>
+            <button class="no_of_questions">25</button>
+        </div>
+
+        <button class="start_button">Start Quiz</button>
+
+
+    </div>
+    </header>
+
+    <div class="quiz_questions">
+        <div class="formal_heading">
+            <h1>Quiz Application</h1>
+            <div class="timer">
+                <span class="material-symbols-outlined">alarm</span>
+                <p class="time_counter">10s</p>
+            </div>
+        </div>
+
+        <div class="question_and_answer">
+
+            <h4 class="question">What is the purpose of the 'forEach()' method in JavaScript?</h4>
+
+        <ul class="answer_options">
+            <li class="answer_option">
+                <p>Removes Duplicated Items</p>
+            </li>
+            <li class="answer_option incorrect">
+                <p>First Element in the array</p>
+                <span><i class="fa-regular fa-circle-xmark"></i></span>
+            </li>
+            <li class="answer_option">
+                <p>Sorts an array</p>
+            </li>
+            <li class="answer_option correct">
+                <p>Iterates through each element in an array</p> 
+                <span><i class="fa-regular fa-circle-check"></i></span>
+            </li>
+        </ul>
+
+        </div>
+        <hr>
+
+        <div class="footer_section">
+            
+            <p><b class="currentQuestionNo">1</b> out of <b class="totalQuestions">10</b> Questions</p>
+            <button>Next <span><i class="fa-solid fa-arrow-right"></i></span></button>
+        </div>
+    </div>
+
+    <div class="result_container">
+        <img src="./images/celebration.png" alt="click again">
+        <h2>Quiz Completed!</h2>
+        <p>You answered <b>6</b> out of <b>10</b> questions correctly. Great effort!</p>
+        <button>Try Again</button>
+    </div>
+
+</div>
+
+
+
+<script src="https://kit.fontawesome.com/f385c00367.js" crossorigin="anonymous"></script>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+    
+</body>
+</html>
